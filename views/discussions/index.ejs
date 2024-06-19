@@ -16,7 +16,7 @@
           </tr>
         </thead>
         <tbody>
-          <% discussions.forEach(discussion => { %>
+          <% discussion.forEach(discussion => { %>
           <tr class="mb-3">
             <td class="text-start">
               <h3 class="pt-3">
@@ -55,7 +55,8 @@
             <td><%= discussion.views %></td>
             <td><%= discussion.comments.length %></td>
             <td>
-              <% if (discussion.comments.length > 0) { %> <% } else { %> No
+              <% if (discussion.comments.length > 0) { %>
+              <% } else { %> No
               comments yet. <% } %>
             </td>
           </tr>

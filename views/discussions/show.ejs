@@ -10,7 +10,7 @@
         <div class="row">
           <div class="col col-lg-1">
             <figure class="user-img">
-              <img src="<%= discussion.author.profileImg ||
+              <img src=
               "https://via.placeholder.com/150" %>" alt="Placeholder image"
               class="rounded-circle" />
             </figure>
@@ -19,7 +19,7 @@
             <header>
               <small
                 >Posted by
-                <a href="<%= `/users/${discussion.author._id}` %>">
+                <a href="<%= `/discussions/${discussion.author._id}` %>">
                   <strong><%= discussion.author.fullName %></strong>
                 </a>
                 on
